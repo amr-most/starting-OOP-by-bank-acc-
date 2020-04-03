@@ -1,0 +1,18 @@
+class Account:
+    def __init__(self, account_no, name, initial_amount):
+        self.no = account_no
+        self.name = name
+        self.balance = initial_amount
+        
+    def withdraw(self, amount):
+        self.balance -= amount
+    def deposite(self, amount):
+        self.balance += amount
+    def show(self):
+        print('name is :' ,self.name ,'\n', 'account no:', self.no,'\n', 'balance = ', self.balance)
+            
+
+a = Account(11212, 'Amr' , 10000)
+b = Account(22354, 'safaa', 30000)
+a.withdraw(5000)
+a.show()
